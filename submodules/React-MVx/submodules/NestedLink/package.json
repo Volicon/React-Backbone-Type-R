@@ -1,0 +1,75 @@
+{
+  "name": "valuelink",
+  "version": "1.5.4",
+  "description": "Purely functional two-way data binding and form validation for React",
+  "main": "./dist",
+  "module": "./lib",
+  "types": "./lib",
+  "files": [
+    "dist",
+    "lib",
+    "src",
+    "tags.js",
+    "tags.jsx"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Volicon/valuelink.git"
+  },
+  "keywords": [
+    "react",
+    "valuelink",
+    "databinding",
+    "forms",
+    "binding",
+    "data",
+    "link",
+    "state",
+    "react-component"
+  ],
+  "author": "Vlad Balin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Volicon/valuelink/issues"
+  },
+  "homepage": "https://github.com/Volicon/valuelink#readme",
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.21",
+    "proptypes": "*",
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-add-module-exports": "*",
+    "babel-plugin-transform-class-properties": "*",
+    "babel-plugin-transform-decorators-legacy": "*",
+    "babel-plugin-transform-object-rest-spread": "*",
+    "babel-plugin-transform-react-constant-elements": "*",
+    "babel-plugin-transform-react-inline-elements": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-runtime": "*",
+    "classnames": "^2.2.0",
+    "css-loader": "*",
+    "react": "*",
+    "react-dom": "^16.0.0",
+    "react-modal": "^3.0.4",
+    "rollup": "*",
+    "rollup-plugin-node-resolve": "*",
+    "rollup-plugin-uglify": "*",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "*",
+    "typescript": "*",
+    "webpack": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-lib && npm run build-dist && npm run build-examples",
+    "build-jsx": "node_modules/.bin/tsc ./src/tags.tsx --jsx preserve --module es6 --target ESNext --lib ES2017,DOM --outDir ./temp && cp ./temp/tags.jsx . && node_modules/.bin/tsc ./src/tags.tsx --jsx react --module commonjs --target ES5 --outDir ./temp && cp ./temp/tags.js . && rm -rf ./temp",
+    "build-lib": "node_modules/.bin/tsc",
+    "build-examples": "node_modules/.bin/webpack -p --config example/webpack.config.js",
+    "build-dist": "node_modules/.bin/rollup --config && npm run build-jsx"
+  }
+}

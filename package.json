@@ -1,0 +1,68 @@
+{
+  "name": "nestedreact",
+  "version": "2.1.1",
+  "main": "dist/index.js",
+  "lib": "lib/index.js",
+  "description": "Advanced models, state management, and data binding solution for React",
+  "homepage": "https://github.com/Volicon/react-backbone.glue",
+  "keywords": [
+    "backbone",
+    "model",
+    "view",
+    "valuelink",
+    "data",
+    "binding",
+    "nestedtypes",
+    "react",
+    "react-component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Volicon/react-backbone.glue.git"
+  },
+  "author": "Vlad Balin <https://github.com/gaperton>",
+  "contributors": [],
+  "dependencies": {
+    "tslib": "^1.8.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "prop-types": "*",
+    "react-dom": "*",
+    "jquery": "*",
+    "underscore": "*",
+    "nestedtypes": "^2.1.0-rc00"
+  },
+  "devDependencies": {
+    "@types/jquery": "^2.0.48",
+    "@types/prop-types": "^15.5.2",
+    "@types/react": "^16.0.25",
+    "jquery": "*",
+    "nestedtypes": "^2.1.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "typescript": "<2.4.0",
+    "underscore": "*"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "src",
+    "tags.js",
+    "tags.jsx"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run pull && npm run compile",
+    "pull": "git submodule update --remote && cp ./submodules/React-MVx/tags.* . && cp -R ./submodules/React-MVx/src/* ./src/react-mvx",
+    "compile": "./node_modules/.bin/tsc && ./node_modules/.bin/rollup --config && ./node_modules/.bin/rollup --config ./rollup.config.minify.js",
+    "deploy": "cp -R ./dist ./examples/*/node_modules/nestedreact",
+    "deploy:example": "bash -c 'target=$0/node_modules/nestedreact  &&  mkdir -p $target  &&  cp -R ./dist/ $target &&  cp ./dist/index.min.js.map $target && ((unlink $target/package.json || true) >/dev/null 2>&1) && cp ./tags.js* $target'",
+    "deploy:examples": "for exmpl in `ls -d ./examples/*`; do npm run deploy:example $exmpl; done"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "nestedreact",
+  "name": "react-backbone-type-r",
   "version": "2.1.1",
   "main": "dist/index.js",
   "lib": "lib/index.js",
@@ -24,7 +24,6 @@
   "contributors": [],
   "dependencies": {
     "jquery": "*",
-    "nestedbackbone": "git+https://github.com/Volicon/Backbone-Type-R.git",
     "nestedtypes": "git+https://github.com/Volicon/Backbone-Type-R.git",
     "prop-types": "*",
     "react": "*",

@@ -1,4 +1,4 @@
-import { Component } from './react-mvx'
+import { Component } from 'react-mvx'
 
 const dontAutobind = [
     'State', 'Store', 'constructor', 

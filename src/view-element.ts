@@ -1,6 +1,5 @@
-import React, { define, Component } from './react-mvx'
-import ReactDOM from 'react-dom'
-import { tools } from 'type-r'
+import React, { Component } from 'react-mvx';
+import { tools } from 'type-r';
 
 const { notEqual } = tools;
 

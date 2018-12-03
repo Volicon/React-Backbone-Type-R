@@ -2,8 +2,9 @@
     "compilerOptions": {
         "alwaysStrict": true,
         "moduleResolution": "node",
+        "lib": ["dom","es2015"],
         "importHelpers": true,
-        "noEmitHelpers": false,
+        "noEmitHelpers": true,
         "outDir": "lib",
         "declaration": true,
         "target": "es5",
@@ -11,11 +12,7 @@
         "sourceMap": true,
         "jsx": "react",
         "baseUrl": "./",
-        "experimentalDecorators": true,
-        "paths": {
-            "tslib" : ["node_modules/tslib/tslib.d.ts"],
-            "type-r": ["node_modules/nestedtypes"]
-        }
+        "experimentalDecorators": true
     },
     "files":[
         "./src/index.ts"

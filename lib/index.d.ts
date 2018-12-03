@@ -1,6 +1,6 @@
 declare const NestedReact: any;
 export default NestedReact;
-export * from './react-mvx';
+export * from 'react-mvx';
 import * as PropTypes from 'prop-types';
 import subview from './view-element';
 export { subview };

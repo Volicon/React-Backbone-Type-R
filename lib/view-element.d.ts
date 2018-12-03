@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { Component } from './react-mvx';
+import { Component } from 'react-mvx';
 export interface BackboneViewProps {
     View: any;
     options: object;
@@ -11,7 +11,7 @@ export default class BackboneView extends Component<BackboneViewProps, null> {
     hasUnsavedChanges(): any;
     root: any;
     saveRef: (element: any) => void;
-    render(): React.DetailedReactHTMLElement<{
+    render(): import("react").DetailedReactHTMLElement<{
         ref: (element: any) => void;
         className: string;
     }, any>;

@@ -1,12 +1,12 @@
 // Re-export react-mvx
-import ReactMVx from './react-mvx'
+import ReactMVx from 'react-mvx'
 const NestedReact = Object.create( ReactMVx );
 export default NestedReact;
-export * from './react-mvx'
+export * from 'react-mvx'
 
 // NestedReact backward compatibility layer
 import * as ReactDOM from 'react-dom'
-import Nested, { View, Record } from 'type-r'
+import Nested, { View, Record } from 'nestedtypes'
 import * as PropTypes from 'prop-types'
 
 import subview from './view-element'

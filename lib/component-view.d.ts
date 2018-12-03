@@ -1,9 +1,8 @@
-declare global  {
+declare global {
     interface Window {
         Page: {
-            forceResize();
+            forceResize(): any;
         };
     }
 }
 export default function use(View: any): any;
-export {};

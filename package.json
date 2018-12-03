@@ -22,7 +22,7 @@
   },
   "author": "Vlad Balin <https://github.com/gaperton>",
   "contributors": [],
-  "dependencies": {
+  "peerDependencies": {
     "jquery": "*",
     "nestedtypes": "git+https://github.com/Volicon/Backbone-Type-R.git",
     "prop-types": "*",

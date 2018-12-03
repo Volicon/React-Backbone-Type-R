@@ -23,29 +23,23 @@
   "author": "Vlad Balin <https://github.com/gaperton>",
   "contributors": [],
   "dependencies": {
-    "tslib": "^1.9.3"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "prop-types": "*",
-    "react-dom": "*",
     "jquery": "*",
+    "nestedbackbone": "git+https://github.com/Volicon/Backbone-Type-R.git",
+    "nestedtypes": "git+https://github.com/Volicon/Backbone-Type-R.git",
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-mvx": "git+https://github.com/Volicon/React-Type-R.git#develop",
+    "tslib": "^1.9.3",
+    "type-r": "git+https://github.com/Volicon/Type-R.git#develop",
     "underscore": "*",
-    "nestedtypes": "^2.1.0-rc00"
+    "valuelink": "git+https://github.com/Volicon/NestedLink.git"
   },
   "devDependencies": {
     "@types/jquery": "^2.0.51",
     "@types/prop-types": "^15.5.6",
     "@types/react": "^16.7.12",
-    "jquery": "^3.3.1",
-    "nestedtypes": "git+https://github.com/Volicon/Backbone-Type-R.git",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-mvx": "*",
-    "type-r": "alpha",
-    "typescript": "*",
-    "underscore": "^1.9.1"
+    "typescript": "*"
   },
   "files": [
     "dist",

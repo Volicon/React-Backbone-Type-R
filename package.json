@@ -1,6 +1,6 @@
 {
   "name": "react-backbone-type-r",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "main": "lib/index.js",
   "lib": "lib/index.js",
   "description": "Advanced models, state management, and data binding solution for React",
@@ -24,14 +24,14 @@
   "contributors": [],
   "peerDependencies": {
     "jquery": "*",
-    "nestedtypes": "Volicon/Backbone-Type-R",
+    "nestedtypes": "*",
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "react-mvx":"*"
   },
-  "dependencies": {
-    "react-mvx": "Volicon/React-Type-R#develop",
+  "dependencies": {    
     "tslib": "^1.9.3"
   },
   "devDependencies": {
@@ -40,6 +40,7 @@
     "@types/react": "^16.7.12",
     "jquery": "*",
     "nestedtypes": "Volicon/Backbone-Type-R",
+    "react-mvx": "Volicon/React-Type-R#develop",
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",

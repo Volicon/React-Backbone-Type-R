@@ -1,6 +1,6 @@
 {
   "name": "react-backbone-type-r",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "main": "lib/index.js",
   "lib": "lib/index.js",
   "description": "Advanced models, state management, and data binding solution for React",
@@ -24,21 +24,27 @@
   "contributors": [],
   "peerDependencies": {
     "jquery": "*",
-    "nestedtypes": "git+https://github.com/Volicon/Backbone-Type-R.git",
+    "nestedtypes": "Volicon/Backbone-Type-R",
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",
-    "react-mvx": "git+https://github.com/Volicon/React-Type-R.git#develop",
-    "tslib": "^1.9.3",
-    "type-r": "git+https://github.com/Volicon/Type-R.git#develop",
-    "underscore": "*",
-    "valuelink": "git+https://github.com/Volicon/NestedLink.git"
+    "underscore": "*"
+  },
+  "dependencies": {
+    "react-mvx": "Volicon/React-Type-R#develop",
+    "tslib": "^1.9.3"
   },
   "devDependencies": {
     "@types/jquery": "^2.0.51",
     "@types/prop-types": "^15.5.6",
     "@types/react": "^16.7.12",
-    "typescript": "*"
+    "jquery": "*",
+    "nestedtypes": "Volicon/Backbone-Type-R",
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*",
+    "typescript": "*",
+    "underscore": "*"
   },
   "files": [
     "dist",
